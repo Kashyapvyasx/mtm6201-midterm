@@ -1,0 +1,416 @@
+/* 
+font used:
+
+heading
+font-family: 'Noto Serif Display', serif;
+
+body
+font-family: 'Raleway', sans-serif;
+
+
+*/
+
+/* basic style for whole website  */
+body{
+    color: #0d0d0d;
+    background-color: #F2F2F2;
+    accent-color: #F27244;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Noto Serif Display', serif;
+    color: #1B1D21;
+}
+
+p,a{
+    font-family: 'Raleway', sans-serif;
+}
+
+header hr{
+    margin: 1rem 0;
+    border: #F05024 1px solid;
+    width: 100%;
+}
+
+.head_inner,.main_inner,.foot_inner{
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.nav {
+    width: 100%;
+    text-align: center;
+}
+
+.logo{
+    width: 30%;
+    padding-top: 20px;
+    margin: auto;
+    display: block;
+}
+
+ul{
+    padding: 0%;
+}
+
+.nav ul li{
+    list-style-type: none;
+}
+
+.nav a {
+    transition: 0.35s ease-in-out;
+    color: #0d0d0d;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #F27244;
+    background-color: #1B1D21;
+}
+
+/* customsing skip links for screen reader */
+.skip {
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    text-decoration: none;
+    color: #F27244;
+    font-weight: 300;
+    font-size: 0.7rem;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+footer{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.petservices{
+    background-color: #F2BEA0;
+    padding: 1rem;
+}
+
+/* home page */
+
+.catsanddogs picture img{
+    width: 100%;
+    margin: 1rem auto;
+    justify-content: center;
+    display: flex;
+}
+
+.catsanddogs h2,h3{
+    text-align: center;
+}
+
+.catsanddogs p{
+    display: block;
+    top: 10%;
+    bottom: 10%;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.home-hr{
+    border: 1px solid #F05024;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.dog p{
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    margin: 0.2rem;
+}
+
+.adopt{
+    background-color: #3C88A6;
+    color: #F2F2F2;
+    padding: 0.5rem;
+}
+
+.adopt h3{
+        color: #D9D5D2;
+}
+
+
+
+/* contact page */
+
+.contactus {
+    width: 100%;
+    font-weight: 4 00;
+    font-size: 1.2rem;
+}
+
+.contactpic img{ 
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.colforlocation{
+    width: 100%;
+}
+
+.colfordetails{
+    width: 100%;
+}
+
+.colformsg1{
+    width: 100%;
+}
+
+.forminput {
+    width: 100%;
+    height: 1.5rem;
+    font-size: 18px;
+}
+
+.forminput:focus{
+    background-color: #fbffff;
+    color: black;
+}
+
+.formmessageinput:focus{
+    background-color: #fbffff;
+    color: black;
+}
+
+.formmessageinput {
+    width: 100%;
+    font-size: 18px;
+    height: 6rem;
+}
+
+.formbutton {
+    color: #F2BEA0;
+    transition: ease-in-out 0.2s;
+    background-color: #0D0D0D;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid transparent;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 4rem;
+}
+
+.formbutton:hover{
+    color: #1B1D21;
+    background-color: #F2BEA0;
+    box-shadow: 1px 1px 3px black;
+}
+
+.formbutton{
+    position: absolute;
+    margin: 1rem auto;
+}
+
+/* about us  page */
+ 
+.infoaboutus,.mission{
+    text-align: center;
+}
+
+.mypets img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+#aboutush2{
+    text-align: center;
+}
+
+.infoaboutus{
+    display: block;
+    top: 10%;
+    bottom: 10%;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.petsinfo{
+    color: #0D0D0D;
+    text-shadow: 0 0 10px #F27244;
+    animation: shadow 2s ease-in-out infinite alternate;
+}
+
+@keyframes shadow {
+    0% {
+        text-shadow: 0 0 0px #F27244;
+    }
+    100% {
+        text-shadow: 0 0 10px #F27244;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .logo{
+        width: 250px;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+
+    .nav {
+        text-align: right;
+        margin: auto;
+        display: block;
+    }
+
+    .nav ul li {
+        display: inline-block;
+        text-decoration: none;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .nav a {
+        padding: 1.2rem 2rem;
+    }
+
+    
+    .nav a.home {
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+
+    .head_inner,.main_inner,.foot_inner{
+        width: 75%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .grooming{grid-area: p1;}
+    .accessories{grid-area: p2;}
+    .vet{grid-area: p3;}
+    .petservices{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 'p1 p2 p3'
+        'p1 p2 p3';
+        gap: 1rem;
+    }
+
+    .welcomepetlovers picture img{
+        position: relative;
+        display: inline-block;
+    }
+
+    .greetings{
+        text-align: center;
+        position: absolute;
+		top: 70%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+        color: #F2F2F2;
+        background-color: #0d0d0dbd;
+		text-align: center;
+    }
+
+    .greetings h2{
+        color: #F27244;
+    }
+
+    .adopt1 {grid-area: a1;}
+    .adopt2 {grid-area: a2;}
+
+    .adoption{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        'a1 a2'
+    ;
+    }
+
+    /* 
+    adds style to contact page
+    */
+
+    /* conatct page */
+    .contactpic{grid-area: l1;}
+    .colforlocation{grid-area: l2; height: 350px;}
+    .colfordetails{grid-area: l3;}
+    .colformsg1{grid-area: l4;}
+    .colformsg2{grid-area: l5;}
+    .contacting{
+        text-align: center;
+        /* padding: 1rem; */
+        position: absolute;
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+        color: #F2F2F2;
+        background-color: #0d0d0d9e;
+		text-align: center;
+    }
+
+    .contactpic picture img{
+        position: relative;
+		display: inline-block;
+    }
+
+
+    .contactus{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); 
+        gap: 1rem;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        'l1 l1'
+        'l2 l3'
+        'l4 l5'
+        ;
+    }
+
+
+    .contactpic img{ 
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+    
+    /* 
+    adds style to about page
+    */
+
+
+
+    .infoaboutus{ grid-area: a1;}
+    .mission{ grid-area: a2;}
+    .mypets{grid-area: a3;}
+  
+    
+    .petsinfo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 'a1 a3'
+        'a2 a3';
+        gap: 0.5rem;
+    }
+
+
+
+
+    
+      }
+
+
